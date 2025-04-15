@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aroba</title>
+        <link rel="icon" id="favicon" type="image/svg+xml" href="/logo.svg" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <meta
+            name="description"
+            content="Lorry - Your go-to app for all your lorry management needs. Streamline your operations with ease."
+        />
+        <meta
+            name="keywords"
+            content="Lorry, Lorry Management, Transport, Logistics, Fleet Management"
+        />
+        <meta name="author" content="Your Name or Company" />
+        <meta property="og:title" content="Lorry" />
+        <meta
+            property="og:description"
+            content="Lorry - Your go-to app for all your lorry management needs. Streamline your operations with ease."
+        />
+        <meta property="og:image" content="/public/logo.svg" />
+        <script>
+            ;(function () {
+                const theme = localStorage.getItem("vite-theme")
+                const themColor = localStorage.getItem("themeColor")
+                if (theme === "dark") {
+                    document.documentElement.classList.add("dark")
+                }
+            })()
+        </script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+import{j as o,B as i}from"./index-BuAxSJaU.js";import{u as r,D as e}from"./useDownloadAsExcel-B0QCkxlR.js";const d=({url:s,name:n})=>{const{trigger:t,isFetching:a}=r({url:s,name:n});return o.jsx(i,{variant:"secondary",icon:o.jsx(e,{width:16}),loading:a,onClick:t,children:"Yuklab olish"})};export{d as D};

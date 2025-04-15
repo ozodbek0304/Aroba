@@ -9,7 +9,6 @@ import {
 import Spinner from "../ui/spinner"
 import { Link, useLocation, useNavigate } from "@tanstack/react-router"
 import { LogOut, User } from "lucide-react"
-import Logo from "./logo"
 import SearchInput from "./search-input"
 import AddOrder from "./add-order"
 import { Tabs, TabsList, TabsTrigger } from "../ui/tabs"
@@ -43,12 +42,12 @@ const Header = () => {
     return (
         <header className="px-4 md:px-6 py-4 gap-4 flex items-center justify-between bg-card max-w-full box-border">
             <div className="flex items-center md:gap-8 min-w-14 max-w-full overflow-x-auto custom-scrollbar">
-                <Link to="/" className="hidden xl:block">
-                    <Logo />
+                <Link to="/" className="hidden xl:block font-bold">
+                    Logo
                 </Link>
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="!outline-none xl:hidden w-auto">
-                        <Logo />
+                    <DropdownMenuTrigger className="!outline-none xl:hidden w-auto font-bold">
+                        Logo
                     </DropdownMenuTrigger>
                     {childPaths?.length > 0 && (
                         <DropdownMenuContent>
